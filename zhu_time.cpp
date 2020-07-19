@@ -58,7 +58,7 @@ void ZhuTimer::Start_Timer_run()
 		if (timer_event.size() > 0)
 		{
 			gettimeofday(&now, NULL);
-
+			//此处若用最小堆也可
 			for (std::vector<timer>::iterator it; it != timer_event.end();)
 			{
 				//如果当前时间大于之前设置的超时时间了,那么得执行
